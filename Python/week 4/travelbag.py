@@ -1,7 +1,7 @@
 
 #1. Create a list of items in your room you can potentially pack.
 bedroom = ["shoes","clothes","socks","underwear","lotion","cologne","charger"]
-dfgfg
+print("Hello")
 #2. Create an empty list to represent your travel bag
 travelbag = []
 #4. Once the list is complete, finalize it by creating a tuple representing your luggage. It should have every item in your travel bag. Empty the travel bag list as you do this
