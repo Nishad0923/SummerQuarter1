@@ -9,11 +9,11 @@ def RPS():
     player1 = input("Player 1, Please enter your name")
     player2 = input ("Player 2, please enter your name")
    #Gather player moves
-    p1_Choice=input(f"{player1}",choose between Rock, Paper,& Scissors:")
+    p1_Choice=input ((f"{player1}",Choose between, Rock, Paper & Scissors))
     
     while not IsValidMove (p1_Choice):
-    print ("Invalid Move ! Please try again")
-    p1_Choice= input (f"{player1}", choose between Rock, Paper, & Scissors
+     print ("Invalid Move ! Please try again")
+    p1_Choice= input ((f"{player1}", Choose between Rock, Paper & Scissors))
     
     p1_Choice = input(f"{player1}, choose between Rock,Paper & Scissors")
     p2_Choice = input(f"{player2}, choose between Rock, Paper & Scissors")
@@ -28,7 +28,7 @@ def RPS():
         print (f"paper beats rock,{player1} wins!") 
     elif p1_Choice == "scissors", {player1} wins!
 
-    elif  p2_Choice == "rock" and p1_Choice == "scissors"
+    elif  p2_Choice == "rock" and p1_Choice == "scissors":
           print (f"Rock beats scissors, {player2}" wins)
     
     elif p2_Choice == "paper" and p1_Choice == "rock":

@@ -9,9 +9,11 @@ travelbag = []
 #3. repeatedly prompt the user for the index of an item to put in their travel bag by removing it from the the list of items in your room to your travel bag list.
 print("PACK YOUR BAGS")
 print("Enter your index of an index of an item you'd like to move from your room to your bag.")
-print("Type'100' when you are done packing./n")
-print ("Your bedroom:")
-print(bedroom)
+print("Type'done'when you are done packing./n")
+
+while True:
+print("\nYour bedroom:")
+
 
 item = int(input("Item index:"))
 
