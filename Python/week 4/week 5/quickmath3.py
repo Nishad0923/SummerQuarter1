@@ -1,24 +1,19 @@
-class Calcuator
-        def__init_(self):
-        pass
-
-def add(self,a,b):
-    return a+ b
-
-def substract(self,a,b):
-    return a- b
-
-def multiply(self,a, b):
-    return a* b
-
-def divide (self, a, b):
-    if b !=0:
-          return
-    else:
-         return "Cannot drive by zero"
-    
-    
-    My_calcuator = Calcuator()
-
-sum_result= my_calculator.add(10,5)
+class Calculator:
+    def Add(self, x, y):
+        return x + y
+    def Subtract(self, x, y):
+        return x - y
+    def Multiply(self, x, y):
+        return x * y
+    def Divide(self, x, y):
+        return x / y
+calculator = Calculator()
+sum = calculator.Add(25, 78)
+difference = calculator.Subtract(10, 5)
+product = calculator.Multiply(5, 8)
+dividend = calculator.Divide(12, 4)
+print(sum)
+print(difference)
+print(product)
+print(dividend)
         
