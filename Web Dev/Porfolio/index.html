@@ -14,16 +14,18 @@
             <nav>
                 <img src="images/2pac.jpg" class="logo">
                 <ul>
-                    <li><a href = "Home"> Home</a></li>
-                    <li><a href = "Home"> About</a></li>
-                    <li><a href = "Home"> Services</a></li>
-                    <li><a href = "Home"> Portfolio</a></li>
-                    <li><a href = "Home"> Contact</a></li>
+                    <li><a href = "#header"> Home</a></li>
+                    <li><a href = "#about"> About</a></li>
+                    <li><a href = "#services"> Services</a></li>
+                    <li><a href = "#portfolio"> Portfolio</a></li>
+                    <li><a href = "#contact"> Contact</a></li>
         
             </i class="fas fa-bars"*‹/i>
             <div class="header-text">
                 <p>Aspiring Xray Technician</p>
-                <h1>Hello my name is <span>Nishad</span></h1>
+                <h1>Hello, my name is <span>Nishad
+                    </span></h1>
+                </span></h1>
             </div>
     </div>
     <!--header section end-->
@@ -32,11 +34,16 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/1226255.jpg.avif">
+                    <img src="images/Detroit.JPEG" alt="Nishad's Image" style="transform: rotate(90deg);">
                 </div>
                 <div class="about-col-2">
                     <h1 class ="sub-titles">About Me</h1>
-                    <p>My name is Nishad, i aspire to be a Xray technician</p>
+                    <p>My name is Nishad, I aspire to be a Xray technician. I am 15.5 years old and I am going to my 
+                        sophomore year of high school. The reason why I joined the Hidden Genius project was to
+                        learn more about technology and game development. Here is our mission statement
+                    "The Hidden Genius Project trains and mentors black male youth in technology creation,
+                    entrepreneurship, and leadership skills and transforms their lives and communities "
+                    </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -52,7 +59,7 @@
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>Experience</span><br>an expirence that ive had was with being with a basketball
-                            team and winning my first ever championship.</li>
+                            team and winning my first ever championship and learning how to code somewhat Im still learning.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -109,7 +116,8 @@
                         <h3>basketball</h3>
                         <p>Ive played basketball ever since i was four but I quit during covid
                             because I thought I wasn't good eniugh but in 2022 I joined a team
-                            and I gained confidence from that and we ended up winning a championship
+                            and I gained confidence from that and we ended up winning a championship.
+                            Ever since then I have been continuing to play basketball and improve my skills.
                         </p>
                             <a href="#"><i class="fa-solid fa-trophy"></i></a>
                     </div>
@@ -139,6 +147,7 @@
                 </div>
             </ul>
         </div>
+        <a href="#" class="btn">my contact info</a>
     </div>
 </div>
 
@@ -154,9 +163,10 @@
                     <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://discord.com/"><i class="fa-brands fa-discord"></i></a>
                 </div>
+                <a href="images/IMG_1283.JPG" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -171,14 +181,9 @@
 
 
 
-
-
-
-
-
 <!-----------------HTML <audio> Autoplay----------------->
 <audio controls>
-    <source src="Audio /Young'n.mp3" type="audio/mpeg">
+    <source src="Audio /2pac - Ambitionz Az a Ridah (Instrumental) HD Quality (1).mp3">
 </audio>
 
 <script>
@@ -195,6 +200,21 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+ </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyiprigvPMjlSDVjaJ_tFmWZHlAyAX8qq_Fz0R_VILoAHQnkOStJAK_QvyHcKn07Gs/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTMl= "Message sent successfully"
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
 </body>
+
 </html>

@@ -204,6 +204,20 @@ tab-titles{
     transition: opacity 0.5s;
     font-size: 14px;
 }
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    font-size: larger;
+    border: 1px solid #d06565;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #b12d2d;
+    transition: background 0.5s;
+}
+
 .work:hover .layer {
     opacity: 1;
 }
@@ -296,6 +310,6 @@ form btn2{
 /*---------------------css for small screens--------- */
 @media only screen and (max-with: 600px){
     #header{
-        background-image: url(images/IMG_0786.HEIC);
+        background-image: url(images/IM G_0786.HEIC);
     }}
 nav .fs{
